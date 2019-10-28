@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.eot");
+  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.ttf") format("truetype"), url("../fonts/PlayfairDisplayBold/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+/*# sourceMappingURL=fonts.css.map */
