@@ -6,8 +6,56 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Advocatus</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
 </head>
 <body>
 
+<header>
+    <div class="container-fluid">
+        <a href="#" class="logo">
+            advocatus
+        </a>
+        <div class="overlay">
+            <nav class="nav">
+                <ul class="nav-menu" role="menu">
+                    <li>
+                        <a href="#" role="menuitem">about us</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">practice area</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">lawyers</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">publications</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">faq</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navBurger" role="navigation" id="navToggle"></div>
+    </div>
+
+</header>
+
+
+<script>
+    $("#navToggle").click(function() {
+        $(this).toggleClass("active");
+        $(".overlay").toggleClass("open");
+        // this line ▼ prevents content scroll-behind
+        $("body").toggleClass("locked");
+    });
+</script>
 </body>
 </html>
