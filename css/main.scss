@@ -22,9 +22,12 @@ $yellow: #e8bf5d;
     }
 }
 
+//settings
 @import "normalize";
 @import "fonts";
-@import "header";
 
+//sections
+@import "header";
+@import "banner";
 
 

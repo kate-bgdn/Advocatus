@@ -17,9 +17,8 @@ header{
             font-family: 'Playfair Display Bold', sans-serif;
             font-size: 25px;
             text-transform: uppercase;
-            &:after{
-                content: '.';
-                color: #e8bf5d;
+            span{
+                color: $yellow;
             }
         }
         .navBurger{
@@ -206,10 +205,6 @@ header{
 
     .locked {
         overflow: hidden;
-    }
-    nav ul li a.start-burger {
-        display: inline-block;
-        color: #48D6A1;
     }
 }
 
