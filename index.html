@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<header>
+<header id="myHeader">
     <div class="container-fluid">
         <a href="#" class="logo">
             advocatus<span>.</span>
@@ -49,9 +49,16 @@
 
 <main>
 
-    <div class="banner"></div>
     
-    <div class="bigBanner" id="bigBaner">
+    <div class="bigBanner">
+        <div class="container">
+            <h1>Adam Suaerez
+                <span>Lawyer</span>
+            </h1>
+            <a href="#">Contact Me</a>
+        </div>
+    </div>
+    <div class="bigBanner">
         <div class="container">
             <h1>Adam Suaerez
                 <span>Lawyer</span>
@@ -65,20 +72,6 @@
 
 
 
-<!--
-<script>
-    document.getElementById('bigBaner').style.height = document.documentElement.clientHeight+'px';
-
-</script>
--->
-
-<script>
-    $("#navToggle").click(function() {
-        $(this).toggleClass("active");
-        $(".overlay").toggleClass("open");
-        // this line ▼ prevents content scroll-behind
-        $("body").toggleClass("locked");
-    });
-</script>
+<script src="./js/main.js"></script>
 </body>
 </html>
