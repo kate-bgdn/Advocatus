@@ -22,12 +22,17 @@ $yellow: #e8bf5d;
     }
 }
 
+main{
+    padding-top: 111px;
+}
+
+
 //settings
 @import "normalize";
 @import "fonts";
 
 //sections
-@import "header";
 @import "banner";
-
+@import "header";
+@import "about-section";
 

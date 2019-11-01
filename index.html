@@ -23,7 +23,7 @@
             <nav class="nav">
                 <ul class="nav-menu" role="menu">
                     <li>
-                        <a href="#banner" role="menuitem">about us</a>
+                        <a href="#bigBaner" role="menuitem">about us</a>
                     </li>
                     <li>
                         <a href="#" role="menuitem">practice area</a>
@@ -47,19 +47,30 @@
     </div>
 </header>
 
-<section class="banner" id="banner">
-    <h1>
-        Adam Suaerez
-        <span>Lawyer</span>
-    </h1>
-    <a href="#">
-        Contact Me
-    </a>
+<main>
 
-</section>
+    <div class="banner"></div>
+    
+    <div class="bigBanner" id="bigBaner">
+        <div class="container">
+            <h1>Adam Suaerez
+                <span>Lawyer</span>
+            </h1>
+            <a href="#">Contact Me</a>
+        </div>
+    </div>
+
+</main>
 
 
 
+
+<!--
+<script>
+    document.getElementById('bigBaner').style.height = document.documentElement.clientHeight+'px';
+
+</script>
+-->
 
 <script>
     $("#navToggle").click(function() {
