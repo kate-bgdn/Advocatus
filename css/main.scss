@@ -19,13 +19,6 @@ $yellow: #e8bf5d;
     }
 }
 
-.container-fluid{
-    max-width: 1170px;
-    margin: auto;
-    @include max-screen('1170px'){
-        padding: 0 10px;
-    }
-}
 
 main{
     padding-top: 111px;
@@ -61,3 +54,4 @@ p{
 @import "publications";
 @import "faq";
 @import "contact";
+@import "footer";

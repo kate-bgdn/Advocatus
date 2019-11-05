@@ -1,0 +1,42 @@
+footer{
+    padding: 30px 0;
+    background-color: #111111;
+    color: white;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            display: inline-block;
+            color: #b5b5b5;
+            padding-top: 5px;
+            a{
+                color: white;
+                font-family: "Open Sans Regular", sans-serif;
+            }
+        }
+        .icons{
+            display: inline-block;
+            list-style: none;
+            li{
+                display: inline-block;
+                a{
+                    padding: 15px 15px 13px 15px;
+                    border-radius: 30px;
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: $yellow;
+                        color: #000000;
+                    }
+                    i{
+                        margin: 0;
+                        padding: 0;
+                        line-height: 14px;
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}
