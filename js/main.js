@@ -19,3 +19,7 @@ $("#navToggle").click(function() {
     // this line ▼ prevents content scroll-behind
     $("body").toggleClass("locked");
 });
+
+
+
+//carousel

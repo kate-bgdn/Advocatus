@@ -24,7 +24,8 @@ p {
   padding-bottom: 15px;
   font-family: "Playfair Display Regular", sans-serif;
   font-size: 20px;
-  line-height: 30px; }
+  line-height: 30px;
+  letter-spacing: 1px; }
 
 * {
   margin: 0;
@@ -451,6 +452,15 @@ header {
     @media screen and (max-width: 1200px) {
       .opinion .container .opinion-desc {
         margin: 0 25px; } }
+  .opinion .single-slide {
+    padding: 0 6.6vw;
+    border: 1px solid #000000;
+    box-sizing: border-box; }
+    @media screen and (max-width: 1024px) {
+      .opinion .single-slide {
+        padding: 0 15px; } }
+    .opinion .single-slide .item {
+      outline: none; }
 
 .publications {
   padding: 90px 0; }
@@ -462,6 +472,43 @@ header {
         margin: 0 25px; } }
     .publications .container .public-desc p {
       color: #666666; }
+  .publications .container .gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; }
+    @media screen and (max-width: 1200px) {
+      .publications .container .gallery {
+        flex-wrap: wrap;
+        justify-content: space-around; } }
+    @media screen and (max-width: 650px) {
+      .publications .container .gallery {
+        flex-direction: column;
+        align-items: center; } }
+    .publications .container .gallery .article {
+      display: inline-block;
+      margin: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e8bf5d; }
+      .publications .container .gallery .article img {
+        width: 100%; }
+      .publications .container .gallery .article p {
+        padding: 0; }
+      .publications .container .gallery .article .info {
+        display: flex;
+        justify-content: space-between; }
+        .publications .container .gallery .article .info span {
+          font-size: 16px;
+          font-family: "Open Sans Regular", sans-serif; }
+          .publications .container .gallery .article .info span i {
+            color: #666666; }
+        .publications .container .gallery .article .info a {
+          font-family: "Open Sans Regular", sans-serif;
+          font-size: 16px; }
+      .publications .container .gallery .article .desc {
+        padding: 40px 0;
+        color: #666666;
+        font-family: "Open Sans Regular", sans-serif;
+        font-size: 14px; }
 
 .faq {
   padding: 90px 0;
