@@ -426,6 +426,27 @@ header {
         margin: 0 25px; } }
     .lawyers .container .lawyer-desc p {
       color: #666666; }
+  .lawyers .container .gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; }
+    @media screen and (max-width: 1200px) {
+      .lawyers .container .gallery {
+        flex-wrap: wrap;
+        justify-content: space-around; } }
+    @media screen and (max-width: 650px) {
+      .lawyers .container .gallery {
+        flex-direction: column;
+        align-items: center; } }
+    .lawyers .container .gallery div {
+      display: inline-block;
+      padding: 5px; }
+      .lawyers .container .gallery div p {
+        padding: 0; }
+      .lawyers .container .gallery div span {
+        font-family: "Open Sans Regular",sans-serif;
+        font-size: 14px;
+        line-height: 14px; }
 
 .opinion {
   padding: 90px 0;
