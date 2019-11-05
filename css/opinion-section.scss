@@ -1,0 +1,15 @@
+.opinion{
+    padding: 90px 0;
+    background-color: #111111;
+    color: #ffffff;
+    .container{
+        .opinion-desc{
+            @extend %border-left;
+            background: url("../img/04.svg") no-repeat 1%;
+            background-size: contain;
+            @include max-screen(1200px){
+                margin: 0 25px;
+            }
+        }
+    }
+}

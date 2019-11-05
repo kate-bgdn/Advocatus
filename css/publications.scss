@@ -1,0 +1,14 @@
+.publications{
+    padding: 90px 0;
+    .container{
+        .public-desc{
+            @extend %border-left;
+            background: url("../img/05.svg") no-repeat 1%;
+            background-size: contain;
+            @include max-screen(1200px){
+                margin: 0 25px;
+            }
+            p{color: #666666;}
+        }
+    }
+}

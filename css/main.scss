@@ -1,5 +1,10 @@
 $yellow: #e8bf5d;
 
+%border-left{
+    border-left: $yellow solid 2px;
+    padding-left: 25px;
+}
+
 @mixin max-screen($res) {
     @media screen and (max-width: $res) {
         @content;
@@ -26,13 +31,34 @@ main{
     padding-top: 111px;
 }
 
+h2{
+    margin-bottom: 20px;
+    font-family: "Playfair Display Regular", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+p{
+    max-width: 765px;
+    padding-bottom: 15px;
+    font-family: "Playfair Display Regular", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 
 //settings
 @import "normalize";
 @import "fonts";
 
 //sections
-@import "banner";
 @import "header";
+@import "banner";
 @import "about-section";
-
+@import "practice-area";
+@import "lawyers";
+@import "opinion-section";
+@import "publications";
+@import "faq";
+@import "contact";

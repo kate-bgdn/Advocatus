@@ -1,3 +1,7 @@
+.about .about-desc, .practice-area .container .practice-desc, .lawyers .container .lawyer-desc, .opinion .container .opinion-desc, .publications .container .public-desc, .faq .container .faq-desc, .contact .container .contact-desc {
+  border-left: #e8bf5d solid 2px;
+  padding-left: 25px; }
+
 .container {
   max-width: 1100px;
   margin: auto; }
@@ -14,6 +18,20 @@
 
 main {
   padding-top: 111px; }
+
+h2 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display Regular", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: normal; }
+
+p {
+  max-width: 765px;
+  padding-bottom: 15px;
+  font-family: "Playfair Display Regular", sans-serif;
+  font-size: 20px;
+  line-height: 30px; }
 
 * {
   margin: 0;
@@ -54,67 +72,6 @@ a {
   src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.bigBanner {
-  background: url("../img/banner-pic.png") no-repeat 50% 50%;
-  background-size: cover;
-  height: 90vh;
-  color: white; }
-  .bigBanner div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60vh; }
-    @media screen and (max-width: 685px) {
-      .bigBanner div {
-        flex-direction: column;
-        align-items: center; } }
-    .bigBanner div h1 {
-      display: inline-block;
-      margin: 0 100px 30px 0;
-      padding: 0 0 0 20px;
-      border-left: 2px solid #e8bf5d;
-      font-family: 'Playfair Display Regular', sans-serif;
-      font-size: 65px;
-      font-weight: normal;
-      letter-spacing: 3px;
-      text-align: left; }
-      @media screen and (max-width: 1230px) {
-        .bigBanner div h1 {
-          font-size: 40px;
-          letter-spacing: 1px; } }
-      @media screen and (max-width: 685px) {
-        .bigBanner div h1 {
-          margin: 0 0 30px 0; } }
-      @media screen and (max-width: 500px) {
-        .bigBanner div h1 {
-          font-size: 30px;
-          letter-spacing: 1px; } }
-      .bigBanner div h1 span {
-        display: block;
-        font-family: "Open Sans Regular", sans-serif;
-        font-size: 31px; }
-        @media screen and (max-width: 500px) {
-          .bigBanner div h1 span {
-            font-size: 20px; } }
-    .bigBanner div a {
-      display: inline-block;
-      margin: 0 0 0 7vw;
-      padding: 12px 50px;
-      font-family: "Playfair Display Regular", sans-serif;
-      font-size: 16px;
-      border-radius: 40px;
-      border: solid 2px #e8bf5d;
-      color: black;
-      background-color: #e8bf5d;
-      transition: 0.3s; }
-      @media screen and (max-width: 685px) {
-        .bigBanner div a {
-          margin: 0; } }
-      .bigBanner div a:hover {
-        background-color: white;
-        border: solid 2px #e8bf5d;
-        color: #e8bf5d; }
-
 @media screen and (max-width: 1024px) {
   .navBurger {
     position: fixed;
@@ -234,6 +191,7 @@ a {
     overflow: hidden; } }
 header {
   position: fixed;
+  z-index: 9;
   width: 100%;
   padding: 35px 0;
   background: white; }
@@ -304,35 +262,82 @@ header {
   -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); }
 
+.bigBanner {
+  background: url("../img/banner-pic.png") no-repeat 50% 50%;
+  background-size: cover;
+  height: 90vh;
+  color: white; }
+  .bigBanner div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60vh; }
+    @media screen and (max-width: 685px) {
+      .bigBanner div {
+        flex-direction: column;
+        align-items: center; } }
+    .bigBanner div h1 {
+      display: inline-block;
+      margin: 0 100px 30px 0;
+      padding: 0 0 0 20px;
+      border-left: 2px solid #e8bf5d;
+      font-family: 'Playfair Display Regular', sans-serif;
+      font-size: 65px;
+      font-weight: normal;
+      letter-spacing: 3px;
+      text-align: left; }
+      @media screen and (max-width: 1230px) {
+        .bigBanner div h1 {
+          font-size: 40px;
+          letter-spacing: 1px; } }
+      @media screen and (max-width: 685px) {
+        .bigBanner div h1 {
+          margin: 0 0 30px 0; } }
+      @media screen and (max-width: 500px) {
+        .bigBanner div h1 {
+          font-size: 30px;
+          letter-spacing: 1px; } }
+      .bigBanner div h1 span {
+        display: block;
+        font-family: "Open Sans Regular", sans-serif;
+        font-size: 31px; }
+        @media screen and (max-width: 500px) {
+          .bigBanner div h1 span {
+            font-size: 20px; } }
+    .bigBanner div a {
+      display: inline-block;
+      margin: 0 0 0 7vw;
+      padding: 12px 50px;
+      font-family: "Playfair Display Regular", sans-serif;
+      font-size: 16px;
+      border-radius: 40px;
+      border: solid 2px #e8bf5d;
+      color: black;
+      background-color: #e8bf5d;
+      transition: 0.3s; }
+      @media screen and (max-width: 685px) {
+        .bigBanner div a {
+          margin: 0; } }
+      .bigBanner div a:hover {
+        background-color: white;
+        border: solid 2px #e8bf5d;
+        color: #e8bf5d; }
+
 .about {
   padding: 80px 0; }
   .about .about-desc {
-    border-left: #e8bf5d solid 2px;
     margin-bottom: 50px;
-    padding-left: 25px;
     background: url("../img/01.svg") no-repeat 1%;
     background-size: contain; }
     @media screen and (max-width: 1200px) {
       .about .about-desc {
         margin: 0 25px; } }
-    .about .about-desc h2 {
-      margin-bottom: 20px;
-      font-family: "Playfair Display Regular", sans-serif;
-      font-size: 30px;
-      letter-spacing: 2px;
-      font-weight: normal; }
     .about .about-desc p {
-      max-width: 765px;
-      padding-bottom: 15px;
-      font-family: "Playfair Display Regular", sans-serif;
-      font-size: 20px;
-      line-height: 30px;
       color: #666666; }
   .about .about-history {
-    margin: 50px 0; }
+    margin: 50px 0 25px; }
     .about .about-history div {
       display: inline-block;
-      position: relative;
       vertical-align: top;
       max-width: 49%; }
       @media screen and (max-width: 1200px) {
@@ -353,19 +358,117 @@ header {
         list-style: none; }
         .about .about-history div ol li {
           padding-left: 80px;
+          position: relative;
           margin: 15px; }
+          @media screen and (max-width: 1024px) {
+            .about .about-history div ol li {
+              position: inherit; } }
           .about .about-history div ol li span {
             font-family: "Open Sans Bold",sans-serif;
             font-size: 21px;
             position: absolute;
-            left: 0;
+            left: -15px;
             color: #000000; }
-            @media screen and (max-width: 1200px) {
+            @media screen and (max-width: 1024px) {
               .about .about-history div ol li span {
                 left: 15px; } }
       .about .about-history div p {
         font-family: "Open Sans Regular", sans-serif;
         font-size: 14px;
         color: #666666; }
+
+.practice-area {
+  padding: 90px 0;
+  background-color: #111111;
+  color: #ffffff; }
+  .practice-area .container .practice-desc {
+    background: url("../img/02.svg") no-repeat 1%;
+    background-size: contain; }
+    @media screen and (max-width: 1200px) {
+      .practice-area .container .practice-desc {
+        margin: 0 25px; } }
+  .practice-area .container .components {
+    display: flex;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 1000px) {
+      .practice-area .container .components {
+        flex-direction: column;
+        align-items: center; } }
+    .practice-area .container .components .option {
+      display: inline-flex;
+      max-width: 49%;
+      margin-top: 45px;
+      padding-left: 110px;
+      box-sizing: border-box; }
+      @media screen and (max-width: 1000px) {
+        .practice-area .container .components .option {
+          max-width: 70%;
+          padding-left: 50px; } }
+      @media screen and (max-width: 500px) {
+        .practice-area .container .components .option {
+          max-width: 95%;
+          padding-left: 30px; } }
+      .practice-area .container .components .option i {
+        padding: 5px 25px 0 0;
+        color: #e8bf5d;
+        font-size: 40px; }
+      .practice-area .container .components .option div span {
+        font-size: 14px;
+        font-family: "Open Sans Regular",sans-serif; }
+
+.lawyers {
+  padding: 90px 0; }
+  .lawyers .container .lawyer-desc {
+    background: url("../img/03.svg") no-repeat 1%;
+    background-size: contain; }
+    @media screen and (max-width: 1200px) {
+      .lawyers .container .lawyer-desc {
+        margin: 0 25px; } }
+    .lawyers .container .lawyer-desc p {
+      color: #666666; }
+
+.opinion {
+  padding: 90px 0;
+  background-color: #111111;
+  color: #ffffff; }
+  .opinion .container .opinion-desc {
+    background: url("../img/04.svg") no-repeat 1%;
+    background-size: contain; }
+    @media screen and (max-width: 1200px) {
+      .opinion .container .opinion-desc {
+        margin: 0 25px; } }
+
+.publications {
+  padding: 90px 0; }
+  .publications .container .public-desc {
+    background: url("../img/05.svg") no-repeat 1%;
+    background-size: contain; }
+    @media screen and (max-width: 1200px) {
+      .publications .container .public-desc {
+        margin: 0 25px; } }
+    .publications .container .public-desc p {
+      color: #666666; }
+
+.faq {
+  padding: 90px 0;
+  background-color: #111111;
+  color: #ffffff; }
+  .faq .container .faq-desc {
+    background: url("../img/06.svg") no-repeat 1%;
+    background-size: contain; }
+    @media screen and (max-width: 1200px) {
+      .faq .container .faq-desc {
+        margin: 0 25px; } }
+
+.contact {
+  padding: 90px 0; }
+  .contact .container .contact-desc {
+    background: url("../img/07.svg") no-repeat 1%;
+    background-size: contain; }
+    @media screen and (max-width: 1200px) {
+      .contact .container .contact-desc {
+        margin: 0 25px; } }
+    .contact .container .contact-desc p {
+      color: #666666; }
 
 /*# sourceMappingURL=main.css.map */

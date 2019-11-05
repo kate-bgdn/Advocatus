@@ -1,0 +1,15 @@
+.faq{
+    padding: 90px 0;
+    background-color: #111111;
+    color: #ffffff;
+    .container{
+        .faq-desc{
+            @extend %border-left;
+            background: url("../img/06.svg") no-repeat 1%;
+            background-size: contain;
+            @include max-screen(1200px){
+                margin: 0 25px;
+            }
+        }
+    }
+}

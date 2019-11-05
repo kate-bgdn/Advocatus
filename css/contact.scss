@@ -1,0 +1,14 @@
+.contact{
+    padding: 90px 0;
+    .container{
+        .contact-desc{
+            @extend %border-left;
+            background: url("../img/07.svg") no-repeat 1%;
+            background-size: contain;
+            @include max-screen(1200px){
+                margin: 0 25px;
+            }
+            p{color: #666666;}
+        }
+    }
+}
