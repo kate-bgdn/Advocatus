@@ -306,5 +306,66 @@ header {
 
 .about {
   padding: 80px 0; }
+  .about .about-desc {
+    border-left: #e8bf5d solid 2px;
+    margin-bottom: 50px;
+    padding-left: 25px;
+    background: url("../img/01.svg") no-repeat 1%;
+    background-size: contain; }
+    @media screen and (max-width: 1200px) {
+      .about .about-desc {
+        margin: 0 25px; } }
+    .about .about-desc h2 {
+      margin-bottom: 20px;
+      font-family: "Playfair Display Regular", sans-serif;
+      font-size: 30px;
+      letter-spacing: 2px;
+      font-weight: normal; }
+    .about .about-desc p {
+      max-width: 765px;
+      padding-bottom: 15px;
+      font-family: "Playfair Display Regular", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      color: #666666; }
+  .about .about-history {
+    margin: 50px 0; }
+    .about .about-history div {
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      max-width: 49%; }
+      @media screen and (max-width: 1200px) {
+        .about .about-history div {
+          padding: 0 15px;
+          max-width: 45%; } }
+      @media screen and (max-width: 768px) {
+        .about .about-history div {
+          max-width: 95%; } }
+      .about .about-history div h3 {
+        font-family: "Playfair Display Regular", sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        color: #111111; }
+      .about .about-history div ol {
+        list-style: none; }
+        .about .about-history div ol li {
+          padding-left: 80px;
+          margin: 15px; }
+          .about .about-history div ol li span {
+            font-family: "Open Sans Bold",sans-serif;
+            font-size: 21px;
+            position: absolute;
+            left: 0;
+            color: #000000; }
+            @media screen and (max-width: 1200px) {
+              .about .about-history div ol li span {
+                left: 15px; } }
+      .about .about-history div p {
+        font-family: "Open Sans Regular", sans-serif;
+        font-size: 14px;
+        color: #666666; }
 
 /*# sourceMappingURL=main.css.map */

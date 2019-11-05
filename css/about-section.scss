@@ -1,7 +1,75 @@
 .about{
-
     padding: 80px 0;
-    .container{
-
+    .about-desc{
+        border-left: $yellow solid 2px;
+        margin-bottom: 50px;
+        padding-left: 25px;
+        background: url("../img/01.svg") no-repeat 1%;
+        background-size: contain;
+        @include max-screen(1200px){
+            margin: 0 25px;
+        }
+        h2{
+            margin-bottom: 20px;
+            font-family: "Playfair Display Regular", sans-serif;
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-weight: normal;
+        }
+        p{
+            max-width: 765px;
+            padding-bottom: 15px;
+            font-family: "Playfair Display Regular", sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: #666666;
+        }
+    }
+    .about-history{
+        margin: 50px 0;
+        div{
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            max-width: 49%;
+            @include max-screen(1200px){
+                padding: 0 15px;
+                max-width: 45%;
+            }
+            @include max-screen(768px){
+                max-width: 95%;
+            }
+            h3{
+                font-family: "Playfair Display Regular", sans-serif;
+                font-size: 20px;
+                font-weight: normal;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+                color: #111111;
+            }
+            ol{
+                list-style: none;
+                li{
+                    padding-left: 80px;
+                    margin: 15px;
+                    span{
+                        font-family: "Open Sans Bold",sans-serif;
+                        font-size: 21px;
+                        position: absolute;
+                        left: 0;
+                        color: #000000;
+                        @include max-screen(1200px){
+                            left: 15px;
+                        }
+                    }
+                }
+            }
+            p{
+                font-family: "Open Sans Regular", sans-serif;
+                font-size: 14px;
+                color: #666666;
+            }
+        }
     }
 }
+
