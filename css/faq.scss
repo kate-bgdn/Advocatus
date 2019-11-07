@@ -4,6 +4,7 @@
     color: #ffffff;
     .container{
         .faq-desc{
+            margin-bottom: 80px;
             @extend %border-left;
             background: url("../img/06.svg") no-repeat 1%;
             background-size: contain;
@@ -11,5 +12,86 @@
                 margin: 0 25px;
             }
         }
+        #tabs{
+            display: flex;
+            justify-content: center;
+            background-color: initial;
+            border: none;
+            @include max-screen(1024px){
+                flex-direction: column;
+                align-items: center;
+            }
+            ul{
+                background-color: initial;
+                border: none;
+                padding: 0;
+                max-width: 40%;
+                margin-right: 20px;
+                @include max-screen(1024px){
+                    margin-right: 0;
+                    max-width: 60%;
+                }
+                @include max-screen(800px){
+                    max-width: 90%;
+                }
+                li{
+                    font-family: "Open Sans Bold", sans-serif;
+                    font-size: 14px;
+                    background-color: initial;
+                    border: none;
+                    padding: 0;
+                    border-bottom: 2px solid $yellow;
+                    width: 100%;
+                    color: initial;
+                    opacity: 1;
+                    outline: none;
+                    a{
+                        color: #ffffff;
+                        border: none;
+                        padding: 10px 10px 10px 0;
+                        outline: none;
+                        width: 100%;
+                        white-space: pre-wrap;
+                        &:after{
+                            content: '+';
+                            display: inline-block;
+                            color: white;
+                            font-family: "Open Sans Bold", sans-serif;
+                            font-size: 18px;
+                            line-height: 18px;
+                            float: right;
+                        }
+                    }
+                    a:focus{
+                        color: #e8bf5d;
+                        &:after{
+                            content: '-';
+                            display: inline-block;
+                            color: white;
+                            font-family: "Open Sans Bold", sans-serif;
+                            font-size: 20px;
+                            line-height: 18px;
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .tab{
+                padding: 20px;
+                background-color: $yellow;
+                max-width: 35%;
+                color: #111111;
+                font-family: "Open Sans Regular", sans-serif;
+                font-size: 14px;
+                @include max-screen(1024px){
+                    margin-top: 30px;
+                    max-width: 50%;
+                }
+                @include max-screen(800px){
+                    max-width: 70%;
+                }
+            }
+        }
     }
 }
+
