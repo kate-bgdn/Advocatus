@@ -1,0 +1,86 @@
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+
+.single-slide{
+    max-width: 1024px;
+    margin: auto;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    @include max-screen(1024px){
+        padding: 0 15px;
+        margin: 0 30px;
+    }
+    .item{
+        outline: none;
+        display: flex;
+        @include max-screen(768px){
+            flex-direction: column;
+            align-items: center;
+        }
+        .image{
+            max-width: 40%;
+            margin-right: 75px;
+            @include max-screen(768px){
+                margin-right: 0;
+                max-width: 50%;
+                margin-bottom: 30px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            p{
+                font-family: "Open Sans Regular", sans-serif;
+                font-size: 14px;
+                line-height: 22px;
+                @include max-screen(768px){
+                    font-size: 12px;
+                }
+            }
+            h5{
+                letter-spacing: 1px;
+                font-family: "Playfair Display Regular", sans-serif;
+                font-size: 21px;
+            }
+        }
+
+    }
+
+}
+
+.slick-dots{
+    width: 80%;
+    li{
+        border: 1px solid #ffffff;
+        background: initial;
+        box-shadow: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 5px;
+        button{
+            color: transparent;
+            background: transparent;
+            opacity: 0;
+            :before{
+
+                color: transparent;
+                background: transparent;
+            }
+        }
+
+    }
+    .slick-active{
+        top: -1px;
+        width: 10px;
+        height: 10px;
+        background: white;
+        opacity: 1;
+        box-shadow: none;
+    }
+
+}

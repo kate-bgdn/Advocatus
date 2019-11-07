@@ -447,20 +447,74 @@ header {
   background-color: #111111;
   color: #ffffff; }
   .opinion .container .opinion-desc {
+    margin-bottom: 50px;
     background: url("../img/04.svg") no-repeat 1%;
     background-size: contain; }
     @media screen and (max-width: 1200px) {
       .opinion .container .opinion-desc {
-        margin: 0 25px; } }
-  .opinion .single-slide {
-    padding: 0 6.6vw;
-    border: 1px solid #000000;
-    box-sizing: border-box; }
-    @media screen and (max-width: 1024px) {
-      .opinion .single-slide {
-        padding: 0 15px; } }
-    .opinion .single-slide .item {
-      outline: none; }
+        margin: 0 25px 50px; } }
+
+.single-slide {
+  max-width: 1024px;
+  margin: auto;
+  border: 1px solid #000000;
+  box-sizing: border-box; }
+  @media screen and (max-width: 1024px) {
+    .single-slide {
+      padding: 0 15px;
+      margin: 0 30px; } }
+  .single-slide .item {
+    outline: none;
+    display: flex; }
+    @media screen and (max-width: 768px) {
+      .single-slide .item {
+        flex-direction: column;
+        align-items: center; } }
+    .single-slide .item .image {
+      max-width: 40%;
+      margin-right: 75px; }
+      @media screen and (max-width: 768px) {
+        .single-slide .item .image {
+          margin-right: 0;
+          max-width: 50%;
+          margin-bottom: 30px; } }
+      .single-slide .item .image img {
+        width: 100%; }
+    .single-slide .item .text p {
+      font-family: "Open Sans Regular", sans-serif;
+      font-size: 14px;
+      line-height: 22px; }
+      @media screen and (max-width: 768px) {
+        .single-slide .item .text p {
+          font-size: 12px; } }
+    .single-slide .item .text h5 {
+      letter-spacing: 1px;
+      font-family: "Playfair Display Regular", sans-serif;
+      font-size: 21px; }
+
+.slick-dots {
+  width: 80%; }
+  .slick-dots li {
+    border: 1px solid #ffffff;
+    background: initial;
+    box-shadow: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px; }
+    .slick-dots li button {
+      color: transparent;
+      background: transparent;
+      opacity: 0; }
+      .slick-dots li button :before {
+        color: transparent;
+        background: transparent; }
+  .slick-dots .slick-active {
+    top: -1px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    opacity: 1;
+    box-shadow: none; }
 
 .publications {
   padding: 90px 0; }
@@ -548,7 +602,7 @@ header {
         font-size: 14px;
         background-color: initial;
         border: none;
-        padding: 0;
+        padding: 10px 10px 10px 0;
         border-bottom: 2px solid #e8bf5d;
         width: 100%;
         color: initial;
@@ -557,7 +611,6 @@ header {
         .faq .container #tabs ul li a {
           color: #ffffff;
           border: none;
-          padding: 10px 10px 10px 0;
           outline: none;
           width: 100%;
           white-space: pre-wrap; }

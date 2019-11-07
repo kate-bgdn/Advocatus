@@ -18,15 +18,24 @@ $("#navToggle").click(function() {
     $(".overlay").toggleClass("open");
     // this line ▼ prevents content scroll-behind
     $("body").toggleClass("locked");
+
+});
+
+//carousel
+$('.single-slide').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
 });
 
 
-//tabs
 
+//tabs
 $( function() {
     $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 } );
 
 
-//carousel

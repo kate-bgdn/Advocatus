@@ -4,23 +4,14 @@
     color: #ffffff;
     .container{
         .opinion-desc{
+            margin-bottom: 50px;
             @extend %border-left;
             background: url("../img/04.svg") no-repeat 1%;
             background-size: contain;
             @include max-screen(1200px){
-                margin: 0 25px;
+                margin: 0 25px 50px;
             }
         }
     }
-    .single-slide{
-        padding: 0 6.6vw;
-        border: 1px solid #000000;
-        box-sizing: border-box;
-        @include max-screen(1024px){
-            padding: 0 15px;
-        }
-        .item{
-            outline: none;
-        }
-    }
+
 }
